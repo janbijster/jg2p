@@ -20,6 +20,7 @@ import com.github.steveash.jg2p.Encoder;
 import com.github.steveash.jg2p.ModelFactory;
 import com.github.steveash.jg2p.PipelineEncoder;
 import com.github.steveash.jg2p.SimpleEncoder;
+import android.util.Log;
 
 /**
  * Main entry point to create a CMU model
@@ -33,6 +34,7 @@ public class CmuEncoderFactory {
   }
 
   public static SimpleEncoder createSimple() {
+    Log.d("UnityTTS", "Creating g2p model...");
     return new SimpleEncoder(create());
   }
 }
